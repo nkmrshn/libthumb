@@ -1,0 +1,8 @@
+.DS_Store
+*.lock
+*.swp
+*.out
+*.a
+*.o
+*.so
+sample
