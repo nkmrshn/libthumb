@@ -51,11 +51,11 @@ sample.cをコンパイルする例：
 
 * 説明
 
-  pathに指定したEXIFファイルのサムネイルをTHUMB_DATA構造体のdata、そのサイズをlengthに代入します。また、回転方向をorientationに代入します。 
+  pathに指定したEXIFファイルのサムネイルをTHUMB_DATA構造体のdata、そのサイズをlengthに代入します。また、回転方向をorientationに代入します。
 
 * 戻り値
 
-  THUMB_DATAのポインタを返します。
+  THUMB_DATAのポインタを返します。サムネイルが取得できなかった場合は、NULLになります。
 
 ---
 
