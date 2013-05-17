@@ -98,7 +98,7 @@ THUMB_DATA *thumb_read(char *path)
       if(is_valid)
         offset = todecimal(buffer, 4);
     } else if(is_valid && memcmp(JPEG_INTERCHANGE_FORMAT_LENGTH, buffer, 2) == 0) {
-    //  JPEG Interchange Format Length
+      //  JPEG Interchange Format Length
       vseek(fp, 6, SEEK_CUR, &is_valid);  //  Skip (Type, Count)
       vread(buffer, 4, fp, &is_valid);
       vrev(buffer, 4, &is_valid, &is_little_endian);
