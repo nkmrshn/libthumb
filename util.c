@@ -14,7 +14,7 @@ const unsigned char TIFF_BIG_ENDIAN[] = {0x4d, 0x4d};
 
 unsigned long todecimal(unsigned char *str, size_t s)
 {
-  int i;
+  size_t i;
   unsigned long x = 0;
 
   for(i = 0; i < s; i++) {
@@ -26,7 +26,7 @@ unsigned long todecimal(unsigned char *str, size_t s)
 
 int strrev(unsigned char *str, size_t s)
 {
-  int i;
+  size_t i;
   unsigned char *tmp;
   
   if((tmp = malloc(sizeof(unsigned char *) * s)) == NULL)
